@@ -1,0 +1,70 @@
+body{
+	background-image: url("img.jpg");
+	background-size: cover;
+	font-size: 14pt;
+
+}
+	
+.logo{
+	display: flex;
+	justify-content: center;
+}
+
+img{
+	width: 441px;
+	height: 163px;
+}
+
+.general{
+	display: flex;
+	justify-content: center;
+}
+
+.reponse, .reponse2{
+	margin: 50px auto;
+	opacity: 0.6;
+	width: 441px;
+	height: 441px;
+	border-radius: 25%;
+	background-color: #566b8f;
+}
+
+.btn-primary{
+	background: url(https://cdn.leagueoflegends.com/riotbar/prod/1.6.104/images/account/sprites-s2a5147f733.png) 0 -293px;
+    color: #b2d9db;
+    float: right;
+    height: 45px;
+    line-height: 28px;
+    margin: 5px 0 0 17px;
+    position: relative;
+    text-align: center;
+    width: 129px;
+    border: 0px;
+    border-bottom: 0px;
+    
+}
+
+.Pseudo-control{
+	color: #ccbf92;
+	background: #1e2328;
+	border: 2px solid;
+	border-color: #6a4f28;
+
+}
+
+.dataresult{
+	margin: auto;
+	font-size: 16pt;
+	color: white;
+	height: 30px;
+	width: 220px;
+	background-color: #1e2328;
+}
+
+.select-serveur{
+	color: #ccbf92;
+	background: #1e2328;
+	border: 2px solid;
+	border-color: #6a4f28;
+
+}

@@ -2,18 +2,39 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	 <!-- <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" > -->
+	<!-- <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" > -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>LoL</title>
 </head>
 <body>
-	<div class="general">
-		<input type="text" name="nom" class="Pseudo-control" placeholder="Pseudo">
-		<button class="btn-primary">Search</button>
-
+	<div class="logo">
+		<img src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/playnow-global/fr_FR/f1896aaffe69e2fec207246d8b7e0b5ff3a378ba/assets/img/lol-logo.png" class="img-responsive">
 	</div>
-<!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
-<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
-<script type="text/javascript" src="app/app.js"></script>
+	<div class="general">
+		<input type="text" name="nom" class="Pseudo-control" placeholder="Pseudo" value="draydan">
+		<select class="select-serveur">
+			<option class="select-serveur-val" value="EUW1">EUW</option>
+			<option class="select-serveur-val" value="EUN1">EUN</option>
+			<option class="select-serveur-val" value="RU">RU</option>
+			<option class="select-serveur-val" value="KR">KR</option>
+		</select>
+		<button class="btn-primary">Search</button>
+	</div>
+	<div class="reponse">
+		
+	</div>
+	<div id="target" class="dataresult"></div>
+	
+	<script id="template" type="x-tmpl-mustache">
+		{{ name }}
+		{{ id }}
+		{{ niveaux }}
+		{{ niveaux_maitrise }}
+	</script>
+
+	<!-- <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+	<script src="node_modules/mustache/mustache.js"></script>
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="app/app.js"></script>
 </body>
 </html>
